@@ -15,3 +15,8 @@ price_series = pull_price_time_series(tickers, bank_data)
 stock_data = fetch_bank_stock_data(bank_data)
 
 # from visualizer.py; visualize collected data
+
+# generate boxplot
+create_boxplot(bank_data)
+# generate scatterplot
+
