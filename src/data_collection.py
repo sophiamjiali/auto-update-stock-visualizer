@@ -44,17 +44,3 @@ def fetch_bank_stock_data(bank_data):
     bank_data.set_index('Date', inplace=True)
     # return the formatted DataFrame; bank_data is mutated in-place
     return stock_data
-
-
-# main
-
-# serialize the ticker list into a string
-tickers = serialize_ticker_list()
-# format the http request
-HTTP_request = select_endpoint(tickers)
-# fetch bank data
-bank_data = pd.read_json(HTTP_request)
-# pull closing prices
-price_series = pull_price_time_series(tickers, bank_data)
-# format bank_data and fetch stock data
-stock_data = fetch_bank_stock_data(bank_data)
