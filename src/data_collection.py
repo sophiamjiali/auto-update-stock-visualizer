@@ -26,7 +26,7 @@ def select_endpoint(tickers):
 def pull_price_time_series(tickers, bank_data):
     bank_price_series = {}  # initialize the dictionary
 
-    for ticker in tickers:
+    for ticker in tickers:  # place each into the series by ticker
         bank_price_series.update({ticker: pd.DataFrame(bank_data[ticker][ENDPOINT])['close']})
 
     return bank_price_series
