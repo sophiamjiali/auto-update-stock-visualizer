@@ -20,7 +20,7 @@ def create_boxplot(bank_data):
     # set_canvas_size() -> called by subplot function, necessary?
 
     # create a boxplot along columns, not rows; transpose DataFrame
-    plt.boxplot(bank_data.transpose)
+    plt.boxplot(bank_data.transpose())
 
     # styling of title and axis
     plt.title('Boxplot of Bank Stock Prices (5Y Lookback)', fontsize=FONT_SIZE)  # chart title

@@ -1,7 +1,8 @@
 import pandas as pd
 
 # Final variables
-IEX_API_KEY = "pk_54a6961a936642eda3fc48fa3e50761c"  # IEX Cloud API Token - Publishable
+# IEX_API_KEY = "pk_54a6961a936642eda3fc48fa3e50761c"  # IEX Cloud API Token - Publishable
+IEX_API_KEY = "pk_c0eef0da57c443d7a5869e7aa701806a"  # IEX Cloud API Token - Publishable
 TICKERS = ['JPM', 'BAC', 'C', 'WFC', 'GS']
 YEARS = 10
 ENDPOINT = 'chart'
